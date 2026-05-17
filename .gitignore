@@ -1,0 +1,5 @@
+data/signals.db
+.env
+__pycache__/
+*.pyc
+reports/digest_*.md
