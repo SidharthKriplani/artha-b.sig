@@ -100,3 +100,83 @@ Done.
 [2026-05-17 18:02] Extraction done.
 Digest written: /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.md
 30 signals. Spend 20 minutes. Mark the 2-3 that matter.
+[main 8157394] daily: 2026-05-17 — 172 new signals
+ 1 file changed, 80 insertions(+)
+To https://github.com/SidharthKriplani/artha-b.sig.git
+   3689a36..8157394  main -> main
+[2026-05-17 18:02] Pushed to GitHub.
+[2026-05-17 18:02] === done ===
+[2026-05-17 18:17] === artha-b.sig daily run ===
+[2026-05-17 18:17] Scraping Reddit...
+/Users/ASUS/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  r/Indian_flex ✓
+  r/indianstartups ✓
+  r/IndiaInvestments ✓
+  r/developersIndia ✓
+  r/indiabusiness ✓
+  r/Entrepreneur ✓
+  r/sweatystartup ✓
+  r/SideProject ✓
+  r/smallbusiness ✓
+
+→ 1 inserted, 899 skipped
+[2026-05-17 18:17] Scrape done.
+[2026-05-17 18:17] Checking LM Studio...
+[2026-05-17 18:17] LM Studio online — extracting...
+Processing 50 signals...
+  ✗ 880de412… ERROR: Invalid \escape: line 5 column 100 (char 330)
+  ✓ 7770e414… [other]
+  ✓ b4df9865… [demand_request]
+  ✓ a8b01a43… [demand_request]
+  ✓ 89d62539… [demand_request]
+  ✓ 338710f1… [pain_point]
+  ✓ aa068a98… [pain_point]
+  ✓ d7b4f416… [pain_point]
+  ✓ 563b75dc… [pain_point]
+  ✓ f2854850… [demand_request]
+  ✓ 7b60905f… [pain_point]
+  ✓ 8f574c32… [demand_request]
+  ✓ cec3c973… [founder_story]
+  ✓ 6412a5fe… [pain_point]
+  ✓ 2d218c07… [demand_request]
+  ✓ 32fd8cdd… [business_model]
+  ✓ c626692a… [business_model]
+  ✓ 0bdaf40d… [demand_request]
+  ✓ 2e941495… [demand_request]
+  ✓ ba5b05b3… [pain_point]
+  ✓ 7bb6eeb1… [business_model]
+  ✓ 100e3c3b… [failure_story]
+  ✓ 5c036268… [demand_request]
+  ✓ 1a8cc32f… [demand_request]
+  ✓ 0d9d0be8… [business_model]
+  ✓ 7fc98b7b… [demand_request]
+  ✓ 90db6719… [pain_point]
+  ✓ ba6f032a… [pain_point]
+  ✓ 9ed649a5… [founder_story]
+  ✓ 90e2faa9… [pain_point]
+  ✓ f5b6c3c3… [wealth_signal]
+  ✓ 7ca6253a… [failure_story]
+  ✓ a0215cee… [wealth_signal]
+  ✓ 7ef7a760… [founder_story]
+  ✓ 56f0c902… [failure_story]
+  ✓ 58b0cf09… [pain_point]
+  ✓ 012ddaa8… [pain_point]
+  ✓ a7c3872c… [business_model]
+  ✓ de08c343… [failure_story]
+  ✓ 3519bcae… [founder_story]
+  ✓ a78c07b9… [pain_point]
+  ✓ d4c80e2e… [pain_point]
+  ✓ 9810d7d9… [wealth_signal]
+  ✓ fb4641f6… [founder_story]
+  ✓ b4eb38fc… [failure_story]
+  ✓ bc9683ef… [pain_point]
+  ✓ 5f90ce95… [failure_story]
+  ✓ 5bc9bc42… [failure_story]
+  ✓ 1b6d67d9… [pain_point]
+  ✓ c25aefec… [pain_point]
+Done.
+[2026-05-17 18:17] Extraction done.
+HTML  → /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.html
+CSV   → /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.csv
+98 signals. Open the HTML in your browser.
