@@ -1,10 +1,9 @@
 """
 artha-b.sig — scrape.py
-Collects raw signals from Reddit into SQLite.
-Targets: wealth signals, founder stories, business models, pain+demand.
+Reddit JSON API (no credentials, 30 req/min).
 """
 
-import praw, sqlite3, hashlib, datetime, os
+import requests, sqlite3, hashlib, datetime, time, os
 
 SUBREDDITS = [
     "Indian_flex", "indianstartups", "IndiaInvestments",
@@ -20,9 +19,12 @@ SIGNAL_KEYWORDS = [
     "couldn't find a tool", "no tool for this", "paying for",
     "wish there was", "anyone else struggling", "workaround",
     "hack for", "manual process", "AMG", "bought a", "got it at",
+    "crores", "lakh", "salary", "freelance", "clients",
 ]
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "../data/signals.db")
+HEADERS = {"User-Agent": "artha-b.sig/0.1 signal-miner (personal use)"}
+DELAY = 2.1  # ~28 req/min, stays under 30
 
 def init_db(conn):
     conn.execute("""
@@ -54,36 +56,57 @@ def has_keyword(text):
     t = text.lower()
     return any(kw.lower() in t for kw in SIGNAL_KEYWORDS)
 
+def fetch_subreddit(sub, sort="hot", limit=100):
+    url = f"https://www.reddit.com/r/{sub}/{sort}.json?limit={limit}"
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=10)
+        r.raise_for_status()
+        return r.json()["data"]["children"]
+    except Exception as e:
+        print(f"  r/{sub} fetch error: {e}")
+        return []
+
 def scrape():
-    reddit = praw.Reddit(
-        client_id=os.environ["REDDIT_CLIENT_ID"],
-        client_secret=os.environ["REDDIT_SECRET"],
-        user_agent=os.environ.get("REDDIT_USER_AGENT", "artha-b.sig/0.1"),
-    )
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     init_db(conn)
     inserted = skipped = 0
 
-    for sub_name in SUBREDDITS:
-        try:
-            for post in reddit.subreddit(sub_name).hot(limit=100):
-                text = f"{post.title} {post.selftext}"
-                if not has_keyword(text):
-                    skipped += 1; continue
-                pid = post_id(post.url)
-                if conn.execute("SELECT 1 FROM signals WHERE id=?", (pid,)).fetchone():
-                    skipped += 1; continue
-                conn.execute(
-                    "INSERT INTO signals (id,scraped_at,source,source_url,title,raw_text,score,num_comments) VALUES (?,?,?,?,?,?,?,?)",
-                    (pid, datetime.datetime.utcnow().isoformat(), f"reddit/r/{sub_name}",
-                     f"https://reddit.com{post.permalink}", post.title, post.selftext[:3000],
-                     post.score, post.num_comments)
-                )
-                inserted += 1
-            conn.commit()
-            print(f"  r/{sub_name} ✓")
-        except Exception as e:
-            print(f"  r/{sub_name} ERROR: {e}")
+    for sub in SUBREDDITS:
+        posts = fetch_subreddit(sub)
+        for child in posts:
+            p = child["data"]
+            title = p.get("title", "")
+            body  = p.get("selftext", "")
+            text  = f"{title} {body}"
+
+            if not has_keyword(text):
+                skipped += 1
+                continue
+
+            pid = post_id(p.get("url", title))
+            if conn.execute("SELECT 1 FROM signals WHERE id=?", (pid,)).fetchone():
+                skipped += 1
+                continue
+
+            conn.execute(
+                """INSERT INTO signals
+                   (id,scraped_at,source,source_url,title,raw_text,score,num_comments)
+                   VALUES (?,?,?,?,?,?,?,?)""",
+                (pid,
+                 datetime.datetime.utcnow().isoformat(),
+                 f"reddit/r/{sub}",
+                 f"https://reddit.com{p.get('permalink','')}",
+                 title,
+                 body[:3000],
+                 p.get("score", 0),
+                 p.get("num_comments", 0))
+            )
+            inserted += 1
+
+        conn.commit()
+        print(f"  r/{sub} ✓")
+        time.sleep(DELAY)
 
     conn.close()
     print(f"\n→ {inserted} inserted, {skipped} skipped")
