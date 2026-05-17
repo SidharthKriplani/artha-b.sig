@@ -180,3 +180,102 @@ Done.
 HTML  → /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.html
 CSV   → /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.csv
 98 signals. Open the HTML in your browser.
+[main d7ef86f] daily: 2026-05-17 — 173 new signals
+ 4 files changed, 2198 insertions(+)
+ create mode 100644 reports/digest_2026-05-17.csv
+ create mode 100644 reports/digest_2026-05-17.html
+ create mode 100644 reports/digest_2026-05-17.md
+To https://github.com/SidharthKriplani/artha-b.sig.git
+   795961b..d7ef86f  main -> main
+[2026-05-17 18:17] Pushed to GitHub.
+[2026-05-17 18:17] === done ===
+[2026-05-17 18:23] === artha-b.sig daily run ===
+[2026-05-17 18:23] Scraping Reddit...
+/Users/ASUS/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  r/Indian_flex ✓
+  r/indianstartups ✓
+  r/IndiaInvestments ✓
+  r/personalfinanceindia ✓
+  r/IndianStreetBets ✓
+  r/developersIndia ✓
+  r/indiabusiness ✓
+  r/india ✓
+  r/bangalore ✓
+  r/Entrepreneur ✓
+  r/EntrepreneurRideAlong ✓
+  r/sweatystartup ✓
+  r/startups ✓
+  r/SideProject ✓
+  r/IMadeThis ✓
+  r/advancedentrepreneur ✓
+  r/SaaS ✓
+  r/ecommerce ✓
+  r/AmazonFBA ✓
+  r/smallbusiness ✓
+  r/freelance ✓
+  r/digitalnomad ✓
+  r/passive_income ✓
+  r/financialindependence ✓
+  r/sidehustle ✓
+
+→ 625 inserted, 1875 skipped
+[2026-05-17 18:23] Scrape done.
+[2026-05-17 18:23] Checking LM Studio...
+[2026-05-17 18:23] LM Studio online — extracting...
+Processing 50 signals...
+  ✗ 880de412… ERROR: Invalid \escape: line 5 column 100 (char 330)
+  ✓ 8c8ae442… [founder_story]
+  ✓ 2f2184b1… [pain_point]
+  ✓ 35c8c23a… [wealth_signal]
+  ✓ efe49506… [founder_story]
+  ✓ 05575d14… [business_model]
+  ✓ 8aab3472… [founder_story]
+  ✓ 419186cc… [failure_story]
+  ✓ 30b5f63f… [founder_story]
+  ✓ fd719084… [founder_story]
+  ✓ c43b005e… [business_model]
+  ✓ d9c6191c… [pain_point]
+  ✓ 714fe805… [demand_request]
+  ✓ a36b5bfa… [business_model]
+  ✓ 6714c625… [business_model]
+  ✓ 314cb92e… [business_model]
+  ✓ 0a475f99… [founder_story]
+  ✓ 07b94328… [business_model]
+  ✓ babc7435… [founder_story]
+  ✓ 9688a56a… [business_model]
+  ✓ 23e93004… [business_model]
+  ✓ a94b60c3… [pain_point]
+  ✓ b683ec13… [business_model]
+  ✓ bff1d950… [failure_story]
+  ✓ a84a4797… [business_model]
+  ✓ 7a5289c6… [business_model]
+  ✓ 1b77d862… [founder_story]
+  ✓ d81f38bf… [demand_request]
+  ✓ 84803eed… [business_model]
+  ✓ 3c9f6847… [pain_point]
+  ✓ 653474d5… [founder_story]
+  ✓ 6b726562… [pain_point]
+  ✓ 05aca11c… [business_model]
+  ✓ db8d1604… [pain_point]
+  ✓ f3eabde4… [founder_story]
+  ✓ 03189a2d… [founder_story]
+  ✓ f7507494… [business_model]
+  ✓ 6e881466… [business_model]
+  ✓ f4b0ac2a… [founder_story]
+  ✓ fb808162… [pain_point]
+  ✓ 91860331… [demand_request]
+  ✓ 836f6af8… [founder_story]
+  ✓ d8d54093… [founder_story]
+  ✓ d0e977fe… [failure_story]
+  ✓ c53de6ec… [business_model]
+  ✓ 2d4c0edf… [business_model]
+  ✓ 10814045… [demand_request]
+  ✓ 4b7f940e… [business_model]
+  ✓ e06d8d10… [pain_point]
+  ✗ 9f94f1b5… ERROR: Invalid control character at: line 5 column 99 (char 311)
+Done.
+[2026-05-17 18:23] Extraction done.
+Markdown → /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.md
+CSV      → /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.csv
+146 signals ready.
