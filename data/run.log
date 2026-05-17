@@ -20,3 +20,83 @@ Traceback (most recent call last):
   File "/Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest.py", line 19, in generate
     rows = conn.execute("""
 sqlite3.OperationalError: no such table: signals
+[main 3689a36] daily: 2026-05-17 — ? new signals
+ 1 file changed, 22 insertions(+)
+ create mode 100644 data/run.log
+To https://github.com/SidharthKriplani/artha-b.sig.git
+   67bc568..3689a36  main -> main
+[2026-05-17 17:57] Pushed to GitHub.
+[2026-05-17 17:57] === done ===
+[2026-05-17 18:02] === artha-b.sig daily run ===
+[2026-05-17 18:02] Scraping Reddit...
+/Users/ASUS/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  r/Indian_flex ✓
+  r/indianstartups ✓
+  r/IndiaInvestments ✓
+  r/developersIndia ✓
+  r/indiabusiness ✓
+  r/Entrepreneur ✓
+  r/sweatystartup ✓
+  r/SideProject ✓
+  r/smallbusiness ✓
+
+→ 172 inserted, 728 skipped
+[2026-05-17 18:02] Scrape done.
+[2026-05-17 18:02] Checking LM Studio...
+[2026-05-17 18:02] LM Studio online — extracting...
+Processing 50 signals...
+  ✓ d573f4e2… [wealth_signal]
+  ✓ 64bec0c4… [wealth_signal]
+  ✓ 94ac3625… [wealth_signal]
+  ✓ 4a738b48… [wealth_signal]
+  ✓ f1bd4b6f… [wealth_signal]
+  ✓ a3197c34… [founder_story]
+  ✓ 297caf64… [wealth_signal]
+  ✓ 5face0bd… [founder_story]
+  ✓ eaab840a… [wealth_signal]
+  ✓ c2188674… [wealth_signal]
+  ✓ 6031c674… [wealth_signal]
+  ✓ eed4b3b1… [wealth_signal]
+  ✓ 879101be… [wealth_signal]
+  ✓ 3a456900… [wealth_signal]
+  ✓ 11a73f6d… [pain_point]
+  ✓ be3c0aa3… [founder_story]
+  ✓ acefd11b… [pain_point]
+  ✓ 2101b7ed… [pain_point]
+  ✓ 24e82de3… [pain_point]
+  ✓ 56fba0ad… [founder_story]
+  ✓ 47e1a832… [business_model]
+  ✓ 56e2d1af… [failure_story]
+  ✓ bb339a9f… [founder_story]
+  ✓ 21c34d81… [pain_point]
+  ✗ 880de412… ERROR: Invalid \escape: line 5 column 100 (char 330)
+  ✓ a1454875… [failure_story]
+  ✓ a00f2b94… [business_model]
+  ✓ db9801fd… [pain_point]
+  ✓ 35bb1d9e… [founder_story]
+  ✓ fa2db069… [pain_point]
+  ✓ 414ad1bc… [business_model]
+  ✓ eefbed64… [pain_point]
+  ✓ 48a6fe72… [pain_point]
+  ✓ 041e2a5b… [demand_request]
+  ✓ 8641a0a7… [pain_point]
+  ✓ 8b54ef2f… [wealth_signal]
+  ✓ 8510c8c7… [business_model]
+  ✓ 4b816db0… [workaround]
+  ✓ 761d3842… [wealth_signal]
+  ✓ d64ed09a… [wealth_signal]
+  ✓ 34ee9d27… [pain_point]
+  ✓ 1eae9c16… [business_model]
+  ✓ 149dbcc3… [pain_point]
+  ✓ 76e21095… [business_model]
+  ✓ 789057fb… [wealth_signal]
+  ✓ 1ada9872… [demand_request]
+  ✓ 3d467d61… [demand_request]
+  ✓ de6a848a… [wealth_signal]
+  ✓ 55755b0e… [failure_story]
+  ✓ 0c299205… [pain_point]
+Done.
+[2026-05-17 18:02] Extraction done.
+Digest written: /Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest_2026-05-17.md
+30 signals. Spend 20 minutes. Mark the 2-3 that matter.
