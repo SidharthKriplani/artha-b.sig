@@ -1,5 +1,5 @@
-data/signals.db
 .env
 __pycache__/
 *.pyc
-reports/digest_*.md
+data/signals.db
+data/launchd.log
