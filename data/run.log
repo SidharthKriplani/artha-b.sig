@@ -1,0 +1,22 @@
+[2026-05-17 17:57] === artha-b.sig daily run ===
+[2026-05-17 17:57] Scraping Reddit...
+Traceback (most recent call last):
+  File "/Users/ASUS/Documents/GitHub/artha-b.sig/digest/scrape.py", line 7, in <module>
+    import praw, sqlite3, hashlib, datetime, os
+ModuleNotFoundError: No module named 'praw'
+[2026-05-17 17:57] Scrape error.
+[2026-05-17 17:57] Checking LM Studio...
+[2026-05-17 17:57] LM Studio online — extracting...
+Traceback (most recent call last):
+  File "/Users/ASUS/Documents/GitHub/artha-b.sig/extract/extract.py", line 77, in <module>
+    extract_all()
+  File "/Users/ASUS/Documents/GitHub/artha-b.sig/extract/extract.py", line 36, in extract_all
+    rows = conn.execute(
+sqlite3.OperationalError: no such table: signals
+[2026-05-17 17:57] Extraction error.
+Traceback (most recent call last):
+  File "/Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest.py", line 77, in <module>
+    generate()
+  File "/Users/ASUS/Documents/GitHub/artha-b.sig/reports/digest.py", line 19, in generate
+    rows = conn.execute("""
+sqlite3.OperationalError: no such table: signals
