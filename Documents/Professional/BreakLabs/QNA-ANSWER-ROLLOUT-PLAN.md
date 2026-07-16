@@ -1148,3 +1148,12 @@ independent validation (over-count Grounding bullets merged in online_learning),
 exceptions. MSL cumulative: 101/206 modules answered, 105 parked.
 Remaining Tier A queued: batch 42 (Monitoring & Unsupervised Learning, 8 modules, 272q), batch 43
 (Optimization Algorithms, 5 modules, 164q), batch 44 (Multi-Armed & Contextual Bandits, 6 modules, 202q).
+
+
+### 2026-07-16 IST (Thursday) -- MSL batch 42 closed (Monitoring & Unsupervised Learning, Tier A batch 10 of 12)
+monitoring_taxonomy, data_drift_detection, concept_drift, prediction_monitoring, clustering_overview,
+kmeans, gmm, anomaly_detection -- 272 questions, 3 flags on independent validation, all confirmed
+legitimate spec-sanctioned exceptions (0 real gaps, 0 hand-patches). MSL cumulative: 109/206 modules
+answered, 97 parked.
+Remaining Tier A queued: batch 43 (Optimization Algorithms, 5 modules, 164q), batch 44 (Multi-Armed &
+Contextual Bandits, 6 modules, 202q).
