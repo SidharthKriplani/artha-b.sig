@@ -1139,3 +1139,12 @@ parked.
 Remaining Tier A queued: batch 41 (Production Feature & Pipeline Infra, 9 modules, 284q), batch 42
 (Monitoring & Unsupervised Learning, 8 modules, 272q), batch 43 (Optimization Algorithms, 5 modules,
 164q), batch 44 (Multi-Armed & Contextual Bandits, 6 modules, 202q).
+
+
+### 2026-07-16 IST (Thursday) -- MSL batch 41 closed (Production Feature & Pipeline Infra, Tier A batch 9 of 12)
+feature_engineering_prod, feature_store, feature_store_traps, late_arriving_data, data_quality,
+label_generation, pipelines, model_registry, online_learning -- 284 questions, 1 real hand-patch on
+independent validation (over-count Grounding bullets merged in online_learning), 0 legitimate spec
+exceptions. MSL cumulative: 101/206 modules answered, 105 parked.
+Remaining Tier A queued: batch 42 (Monitoring & Unsupervised Learning, 8 modules, 272q), batch 43
+(Optimization Algorithms, 5 modules, 164q), batch 44 (Multi-Armed & Contextual Bandits, 6 modules, 202q).
