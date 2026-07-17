@@ -1245,3 +1245,17 @@ Remaining Tier B queued: batch 48 (GraphML part 2, 4mod, 135q), batch 49 (Time S
 6mod, 197q), batch 57 (Unsupervised remainder, 6mod, 197q), batch 58 (Math/Stats remainder, 6mod, 192q),
 batch 59 (Deep Learning remainder, 5mod, 168q), batch 60 (Monitoring + Bandits remainder, 7mod, 239q),
 batch 61 (Causal + Data + SystemDesign remainder, 4mod, 127q).
+
+
+### 2026-07-16 IST (Thursday) -- MSL batch 48 closed (Graph ML part 2, Tier B batch 4 of 17)
+link_prediction, node_classification_at_scale, heterogeneous_graphs, gnn_applications -- 135 questions, 1
+flag on independent validation, confirmed a legitimate spec-sanctioned exception (0 real gaps, 0
+hand-patches). MSL cumulative: 139/206 modules answered, 67 parked. graphMLModules.js is now fully
+answered.
+Remaining Tier B queued: batch 49 (Time Series part 1, 5mod, 165q), batch 50 (Time Series part 2, 4mod,
+140q), batch 51 (Probabilistic ML part 1, 4mod, 141q), batch 52 (Probabilistic ML part 2, 4mod, 140q),
+batch 53 (Self-Supervised part 1, 5mod, 153q), batch 54 (Self-Supervised part 2, 4mod, 128q), batch 55
+(Pricing, 7mod, 215q), batch 56 (Optimization remainder, 6mod, 197q), batch 57 (Unsupervised remainder,
+6mod, 197q), batch 58 (Math/Stats remainder, 6mod, 192q), batch 59 (Deep Learning remainder, 5mod, 168q),
+batch 60 (Monitoring + Bandits remainder, 7mod, 239q), batch 61 (Causal + Data + SystemDesign remainder,
+4mod, 127q).
