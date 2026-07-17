@@ -1174,3 +1174,46 @@ gaps, 0 hand-patches). MSL cumulative: 120/206 modules answered, 86 parked.
 
 **MSL Tier A COMPLETE: 80/80 modules, 2,624 questions, batches 33-44 (12 batches total).** Tier B (86
 modules, 2,841 questions) is the next rollout target -- to be planned in detail once kicked off.
+
+### MSL Tier B QnA answer-writing rollout — plan established 2026-07-16
+
+Tier B: 86 modules, 2,841 questions (confirmed via direct contentStatus.js/QNA_BANK check: all
+clean + parked, not already in TIER_S or TIER_A). 17-batch plan, continuing MSL's batch sequence
+from Tier A's 33-44:
+
+- Batch 45: RL part 1 (5mod, 165q) — mdp_framework, bellman_equations, temporal_difference, deep_q_networks, policy_gradients
+- Batch 46: RL part 2 (5mod, 168q) — actor_critic, ppo_trpo, rlhf_reward_modeling, exploration_exploitation, rl_production
+- Batch 47: GraphML part 1 (5mod, 171q) — graph_representations, spectral_gcn, spatial_gcn, graph_attention, message_passing_framework
+- Batch 48: GraphML part 2 (4mod, 135q) — link_prediction, node_classification_at_scale, heterogeneous_graphs, gnn_applications
+- Batch 49: Time Series part 1 (5mod, 165q) — stationarity, arima_family, seasonality_decomposition, prophet_framework, exponential_smoothing
+- Batch 50: Time Series part 2 (4mod, 140q) — neural_forecasting, forecast_evaluation, ts_anomaly_detection, causal_ts
+- Batch 51: Probabilistic ML part 1 (4mod, 141q) — bayesian_inference, gaussian_processes, variational_inference, vae_foundations
+- Batch 52: Probabilistic ML part 2 (4mod, 140q) — approximate_inference, bayesian_neural_networks, information_geometry, probabilistic_graphical_models
+- Batch 53: Self-Supervised part 1 (5mod, 153q) — ssl_overview, contrastive_loss, simclr, moco, byol_barlow
+- Batch 54: Self-Supervised part 2 (4mod, 128q) — masked_autoencoders, clip_alignment, ssl_for_tabular, downstream_adaptation
+- Batch 55: Pricing (7mod, 215q) — price_elasticity_of_demand, revenue_vs_margin_objective, price_optimization_under_constraints, dynamic_and_surge_pricing, causal_price_experiments, promotion_and_discount_uplift, willingness_to_pay_and_competition
+- Batch 56: Optimization remainder (6mod, 197q) — loss_landscape_intuition, gradient_flow, weight_initialization, second_order_methods, loss_landscape_geometry, gradient_clipping_regularization
+- Batch 57: Unsupervised remainder (6mod, 197q) — hierarchical, dbscan, pca, tsne_umap, autoencoders_dim_reduction, topic_modeling
+- Batch 58: Math/Stats remainder (6mod, 192q) — calculus_ml, matrix_calculus, bayesian_inference_mathstats, em_algorithm, concentration_inequalities, monte_carlo
+- Batch 59: Deep Learning remainder (5mod, 168q) — pretraining, finetune, quantization, dl_serving, dl_debugging
+- Batch 60: Monitoring + Bandits remainder (7mod, 239q) — feature_importance_drift, calibration_monitoring, silent_model_staleness, alerting_runbooks, linucb, off_policy_evaluation, non_stationary_bandits
+- Batch 61: Causal + Data + SystemDesign remainder (4mod, 127q) — mediation, sensitivity_analysis, data_augmentation, ranking_calibration
+
+Total: 86 modules, 2,841 questions across 17 batches. Design rationale: one batch per source file where
+size allows, larger domains (RL/GraphML/TimeSeries/ProbML/SSL) split into two roughly-equal batches for
+consistent size (~130-170q), remaining small leftover files merged for size balance, mirroring Tier A's
+precedent.
+
+
+### 2026-07-16 IST (Thursday) -- MSL batch 45 closed (Reinforcement Learning part 1, Tier B batch 1 of 17)
+mdp_framework, bellman_equations, temporal_difference, deep_q_networks, policy_gradients -- 165
+questions, 0 flags on independent validation, a fully clean first-pass batch (0 real gaps, 0
+hand-patches). MSL cumulative: 125/206 modules answered, 81 parked.
+Remaining Tier B queued: batch 46 (RL part 2, 5mod, 168q), batch 47 (GraphML part 1, 5mod, 171q), batch
+48 (GraphML part 2, 4mod, 135q), batch 49 (Time Series part 1, 5mod, 165q), batch 50 (Time Series part 2,
+4mod, 140q), batch 51 (Probabilistic ML part 1, 4mod, 141q), batch 52 (Probabilistic ML part 2, 4mod,
+140q), batch 53 (Self-Supervised part 1, 5mod, 153q), batch 54 (Self-Supervised part 2, 4mod, 128q),
+batch 55 (Pricing, 7mod, 215q), batch 56 (Optimization remainder, 6mod, 197q), batch 57 (Unsupervised
+remainder, 6mod, 197q), batch 58 (Math/Stats remainder, 6mod, 192q), batch 59 (Deep Learning remainder,
+5mod, 168q), batch 60 (Monitoring + Bandits remainder, 7mod, 239q), batch 61 (Causal + Data +
+SystemDesign remainder, 4mod, 127q).
