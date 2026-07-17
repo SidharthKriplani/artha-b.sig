@@ -1259,3 +1259,36 @@ batch 53 (Self-Supervised part 1, 5mod, 153q), batch 54 (Self-Supervised part 2,
 6mod, 197q), batch 58 (Math/Stats remainder, 6mod, 192q), batch 59 (Deep Learning remainder, 5mod, 168q),
 batch 60 (Monitoring + Bandits remainder, 7mod, 239q), batch 61 (Causal + Data + SystemDesign remainder,
 4mod, 127q).
+
+
+## ⏸ PAUSED 2026-07-17 (Friday) — MSL Tier B rollout paused for weekly token budget
+
+Pausing at the close of batch 48 (12/86 Tier B modules done). Reason: user at ~70% of weekly token
+budget, wants to resume cleanly once the weekly limit resets Tuesday. No batch is in-flight — batch 48
+is fully closed/committed/pushed; batch 49 has not been started.
+
+**Snapshot at pause:** MSL 139/206 modules answered, 67 parked. Tier S complete (40/40). Tier A complete
+(80/80). Tier B in progress (12/86, batches 45-48 of the 17-batch plan below).
+
+**MSL Tier B rollout plan (17 batches, 86 modules, 2,841 questions) — for reference, unchanged since
+established 2026-07-16:**
+- ✅ Batch 45: RL part 1 (5mod, 165q) — closed
+- ✅ Batch 46: RL part 2 (5mod, 168q) — closed
+- ✅ Batch 47: GraphML part 1 (5mod, 171q) — closed
+- ✅ Batch 48: GraphML part 2 (4mod, 135q) — closed
+- ⬜ Batch 49: Time Series part 1 (5mod, 165q) — stationarity, arima_family, seasonality_decomposition, prophet_framework, exponential_smoothing — **NEXT BATCH TO RUN**
+- ⬜ Batch 50: Time Series part 2 (4mod, 140q) — neural_forecasting, forecast_evaluation, ts_anomaly_detection, causal_ts
+- ⬜ Batch 51: Probabilistic ML part 1 (4mod, 141q) — bayesian_inference, gaussian_processes, variational_inference, vae_foundations
+- ⬜ Batch 52: Probabilistic ML part 2 (4mod, 140q) — approximate_inference, bayesian_neural_networks, information_geometry, probabilistic_graphical_models
+- ⬜ Batch 53: Self-Supervised part 1 (5mod, 153q) — ssl_overview, contrastive_loss, simclr, moco, byol_barlow
+- ⬜ Batch 54: Self-Supervised part 2 (4mod, 128q) — masked_autoencoders, clip_alignment, ssl_for_tabular, downstream_adaptation
+- ⬜ Batch 55: Pricing (7mod, 215q) — price_elasticity_of_demand, revenue_vs_margin_objective, price_optimization_under_constraints, dynamic_and_surge_pricing, causal_price_experiments, promotion_and_discount_uplift, willingness_to_pay_and_competition
+- ⬜ Batch 56: Optimization remainder (6mod, 197q) — loss_landscape_intuition, gradient_flow, weight_initialization, second_order_methods, loss_landscape_geometry, gradient_clipping_regularization
+- ⬜ Batch 57: Unsupervised remainder (6mod, 197q) — hierarchical, dbscan, pca, tsne_umap, autoencoders_dim_reduction, topic_modeling
+- ⬜ Batch 58: Math/Stats remainder (6mod, 192q) — calculus_ml, matrix_calculus, bayesian_inference_mathstats, em_algorithm, concentration_inequalities, monte_carlo
+- ⬜ Batch 59: Deep Learning remainder (5mod, 168q) — pretraining, finetune, quantization, dl_serving, dl_debugging
+- ⬜ Batch 60: Monitoring + Bandits remainder (7mod, 239q) — feature_importance_drift, calibration_monitoring, silent_model_staleness, alerting_runbooks, linucb, off_policy_evaluation, non_stationary_bandits
+- ⬜ Batch 61: Causal + Data + SystemDesign remainder (4mod, 127q) — mediation, sensitivity_analysis, data_augmentation, ranking_calibration
+
+**Resume:** on the user's "next" in a future session, start batch 49 following the unchanged pipeline
+documented in this file's earlier entries and in `ml-systems-lab/docs/BACKLOG.md`.
