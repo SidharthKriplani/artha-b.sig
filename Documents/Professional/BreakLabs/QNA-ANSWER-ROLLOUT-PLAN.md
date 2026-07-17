@@ -1165,3 +1165,12 @@ hand-patch on independent validation (over-band bullet count merged in sgd_and_m
 spec exceptions. MSL cumulative: 114/206 modules answered, 92 parked.
 Remaining Tier A queued: batch 44 (Multi-Armed & Contextual Bandits, 6 modules, 202q) -- final batch of
 Tier A.
+
+
+### 2026-07-16 IST (Thursday) -- MSL batch 44 closed (Multi-Armed & Contextual Bandits, Tier A batch 12 of 12 — FINAL)
+mab_problem, epsilon_greedy, ucb_algorithms, thompson_sampling, contextual_bandits, bandits_in_recsys --
+202 questions, 1 flag on independent validation, confirmed a legitimate spec-sanctioned exception (0 real
+gaps, 0 hand-patches). MSL cumulative: 120/206 modules answered, 86 parked.
+
+**MSL Tier A COMPLETE: 80/80 modules, 2,624 questions, batches 33-44 (12 batches total).** Tier B (86
+modules, 2,841 questions) is the next rollout target -- to be planned in detail once kicked off.
