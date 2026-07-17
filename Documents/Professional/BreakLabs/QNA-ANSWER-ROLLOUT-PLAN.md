@@ -1157,3 +1157,11 @@ legitimate spec-sanctioned exceptions (0 real gaps, 0 hand-patches). MSL cumulat
 answered, 97 parked.
 Remaining Tier A queued: batch 43 (Optimization Algorithms, 5 modules, 164q), batch 44 (Multi-Armed &
 Contextual Bandits, 6 modules, 202q).
+
+
+### 2026-07-16 IST (Thursday) -- MSL batch 43 closed (Optimization Algorithms, Tier A batch 11 of 12)
+sgd_and_minibatch, momentum, adagrad_rmsprop, adam_adamw, learning_rate_schedules -- 164 questions, 1 real
+hand-patch on independent validation (over-band bullet count merged in sgd_and_minibatch), 0 legitimate
+spec exceptions. MSL cumulative: 114/206 modules answered, 92 parked.
+Remaining Tier A queued: batch 44 (Multi-Armed & Contextual Bandits, 6 modules, 202q) -- final batch of
+Tier A.
